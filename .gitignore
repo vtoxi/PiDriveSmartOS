@@ -1,0 +1,173 @@
+# PiDriveSmartOS .gitignore
+
+# Build artifacts
+build/
+*.o
+*.so
+*.a
+*.dylib
+*.dll
+*.exe
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+*.autosave
+*.qmlproject.user
+*.qmlproject.user.*
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+*.log.*
+/var/log/pidrive/
+
+# System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+
+# Pi-gen
+pi-gen/deploy/
+pi-gen/work/
+pi-gen/config
+
+# Certificates and keys (NEVER commit these!)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+ca-key.pem
+rauc-key.pem
+
+# Configuration with secrets
+*_secret.conf
+*.env
+.env.local
+
+# OTA bundles
+*.raucb
+*.img
+*.img.xz
+
+# Test data
+test-data/
+*.test
+
+# Documentation build
+docs/_build/
+site/
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Backup files
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (if using any JS tools)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Compiled binaries
+carui
+obdsvc
+hudsvc
+
+# Local configuration overrides
+config.local
+*.local.conf
+
+# Cache
+.cache/
+*.cache
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+

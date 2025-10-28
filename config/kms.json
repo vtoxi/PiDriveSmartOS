@@ -1,0 +1,17 @@
+{
+  "device": "/dev/dri/card1",
+  "outputs": [
+    {
+      "name": "HDMI1",
+      "mode": "1024x600",
+      "format": "argb8888",
+      "physicalWidth": 155,
+      "physicalHeight": 86,
+      "primary": true
+    }
+  ],
+  "hwcursor": false,
+  "pbuffers": true,
+  "separateScreens": false
+}
+

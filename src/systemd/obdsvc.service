@@ -1,0 +1,46 @@
+[Unit]
+Description=PiDriveSmartOS OBD-II Service
+Documentation=https://github.com/yourorg/pidrivesmartos
+After=network.target socketcan.service
+Requires=socketcan.service
+Before=carui.service
+
+[Service]
+Type=simple
+User=obduser
+Group=can
+WorkingDirectory=/opt/pidrive
+ExecStart=/usr/bin/python3 /opt/pidrive/bin/obd_daemon.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Watchdog
+WatchdogSec=60
+
+# Security hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/log/pidrive /var/lib/pidrive
+PrivateTmp=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_CAN
+RestrictNamespaces=true
+RestrictRealtime=true
+
+# CAN bus access
+SupplementaryGroups=can
+AmbientCapabilities=CAP_NET_RAW
+CapabilityBoundingSet=CAP_NET_RAW
+
+# Resource limits
+MemoryMax=256M
+CPUQuota=50%
+
+[Install]
+WantedBy=multi-user.target
+

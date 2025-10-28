@@ -1,0 +1,16 @@
+[Unit]
+Description=SocketCAN Interface Setup
+Documentation=https://github.com/yourorg/pidrivesmartos
+After=network.target
+Before=obdsvc.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/pidrive/bin/setup_socketcan.sh
+RemainAfterExit=yes
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+

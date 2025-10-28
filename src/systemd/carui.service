@@ -1,0 +1,46 @@
+[Unit]
+Description=PiDriveSmartOS Car UI
+Documentation=https://github.com/yourorg/pidrivesmartos
+After=network-online.target obdsvc.service gpsd.service
+Wants=network-online.target
+Requires=obdsvc.service
+
+[Service]
+Type=simple
+User=pidrive
+Group=pidrive
+WorkingDirectory=/opt/pidrive
+Environment="QT_QPA_PLATFORM=eglfs"
+Environment="QT_QPA_EGLFS_HIDECURSOR=1"
+Environment="QT_QPA_EGLFS_INTEGRATION=eglfs_kms"
+Environment="QT_QPA_EGLFS_KMS_CONFIG=/etc/pidrive/kms.json"
+ExecStart=/opt/pidrive/bin/carui
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+# Watchdog (restart if hung for 30 seconds)
+WatchdogSec=30
+
+# Security hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/log/pidrive /var/lib/pidrive /tmp
+PrivateTmp=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+RestrictNamespaces=true
+RestrictRealtime=true
+LockPersonality=true
+
+# Resource limits
+MemoryMax=1G
+CPUQuota=80%
+
+[Install]
+WantedBy=graphical.target
+

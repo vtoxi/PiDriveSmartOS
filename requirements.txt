@@ -1,0 +1,53 @@
+# PiDriveSmartOS Python Requirements
+# 
+# Install with: pip3 install -r requirements.txt
+
+# Core OBD-II and CAN bus support
+python-can==4.3.1
+python-obd==0.7.1
+
+# DBus communication
+dbus-python==1.3.2
+pydbus==0.6.0
+PyGObject==3.46.0
+
+# Serial communication (for GPS)
+pyserial==3.5
+
+# Configuration and data handling
+pyyaml==6.0.1
+toml==0.10.2
+pydantic==2.5.0
+
+# Async I/O
+aiofiles==23.2.1
+
+# HTTP/REST (for OTA updates, web services)
+requests==2.31.0
+aiohttp==3.9.1
+
+# Optional: MQTT for telemetry
+paho-mqtt==1.6.1
+
+# Optional: Image processing (for ADAS)
+# Uncomment if using camera features
+# pillow==10.1.0
+# opencv-python==4.8.1.78
+# numpy==1.26.2
+
+# Optional: Machine learning (for ADAS)
+# Uncomment if using ML features
+# tensorflow-lite==2.14.0
+# tflite-runtime==2.14.0
+
+# Development and testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Debugging
+pdb-clone==3.3.0
+ipdb==0.13.13
+
