@@ -340,8 +340,8 @@ images/
 
 ## Resources
 
-- **GitHub**: [Repository](https://github.com/yourorg/pidrivesmartos)
-- **Documentation**: [GitHub Pages](https://yourorg.github.io/pidrivesmartos)
+- **GitHub**: [Repository](https://github.com/vtoxi/pidrivesmartos)
+- **Documentation**: [GitHub Pages](https://vtoxi.github.io/pidrivesmartos)
 - **Discord**: [Community](https://discord.gg/pidrive)
 
 ---

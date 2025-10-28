@@ -1,6 +1,6 @@
 [Unit]
 Description=SocketCAN Interface Setup
-Documentation=https://github.com/yourorg/pidrivesmartos
+Documentation=https://github.com/vtoxi/pidrivesmartos
 After=network.target
 Before=obdsvc.service
 

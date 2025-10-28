@@ -791,7 +791,7 @@ To maximize SD card life:
 
 ### Community
 
-- **Forum**: [GitHub Discussions](https://github.com/yourorg/pidrivesmartos/discussions)
+- **Forum**: [GitHub Discussions](https://github.com/vtoxi/pidrivesmartos/discussions)
 - **Discord**: [Join our server](https://discord.gg/pidrive)
 - **YouTube**: Installation video tutorials (coming soon)
 

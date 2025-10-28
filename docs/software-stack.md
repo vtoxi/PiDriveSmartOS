@@ -382,7 +382,7 @@ code --install-extension tonka3000.qtvsctools
 
 ```bash
 # Clone repository
-git clone https://github.com/yourorg/pidrivesmartos.git
+git clone https://github.com/vtoxi/pidrivesmartos.git
 cd pidrivesmartos/src/carui
 
 # Create build directory

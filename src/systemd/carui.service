@@ -1,6 +1,6 @@
 [Unit]
 Description=PiDriveSmartOS Car UI
-Documentation=https://github.com/yourorg/pidrivesmartos
+Documentation=https://github.com/vtoxi/pidrivesmartos
 After=network-online.target obdsvc.service gpsd.service
 Wants=network-online.target
 Requires=obdsvc.service

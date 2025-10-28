@@ -126,7 +126,7 @@ See [docs/hardware.md](docs/hardware.md) for detailed wiring diagrams, pinouts, 
 
 ```bash
 # Download the latest PiDriveSmartOS image
-wget https://github.com/yourorg/pidrivesmartos/releases/latest/pidriveos.img.xz
+wget https://github.com/vtoxi/pidrivesmartos/releases/latest/pidriveos.img.xz
 
 # Flash to microSD (Linux/macOS)
 xzcat pidriveos.img.xz | sudo dd of=/dev/sdX bs=4M status=progress
@@ -262,7 +262,7 @@ Comprehensive technical documentation is available in the `/docs` directory:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourorg/pidrivesmartos.git
+git clone https://github.com/vtoxi/pidrivesmartos.git
 cd pidrivesmartos
 
 # Install dependencies (on Raspberry Pi or cross-compile environment)
@@ -395,8 +395,8 @@ You may obtain a copy of the License at
 
 ## 📞 Contact & Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourorg/pidrivesmartos/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourorg/pidrivesmartos/discussions)
+- **Issues**: [GitHub Issues](https://github.com/vtoxi/pidrivesmartos/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/vtoxi/pidrivesmartos/discussions)
 - **Discord**: [Join our community](https://discord.gg/pidriveos)
 - **Email**: support@pidriveos.org
 

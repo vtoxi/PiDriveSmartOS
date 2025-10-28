@@ -392,9 +392,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 ## 📞 Support & Community
 
 ### Resources
-- **Documentation**: [GitHub Pages](https://yourorg.github.io/pidrivesmartos)
+- **Documentation**: [GitHub Pages](https://vtoxi.github.io/pidrivesmartos)
 - **Discord**: [Join community](https://discord.gg/pidrive)
-- **GitHub Discussions**: [Ask questions](https://github.com/yourorg/pidrivesmartos/discussions)
+- **GitHub Discussions**: [Ask questions](https://github.com/vtoxi/pidrivesmartos/discussions)
 - **Email**: support@pidriveos.org
 
 ### Reporting Issues
@@ -449,5 +449,5 @@ Built with:
 **🚗 PiDriveSmartOS - Drive Smart, Drive Open**
 
 **Last Updated**: 2024-10-28  
-**Repository**: [github.com/yourorg/pidrivesmartos](https://github.com/yourorg/pidrivesmartos)
+**Repository**: [github.com/vtoxi/pidrivesmartos](https://github.com/vtoxi/pidrivesmartos)
 

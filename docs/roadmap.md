@@ -401,7 +401,7 @@ We welcome contributions in these areas:
 9. **4G LTE hotspot** (60 votes) → v1.1
 10. **Custom themes** (55 votes) → v0.9
 
-**Vote**: [GitHub Discussions](https://github.com/yourorg/pidrivesmartos/discussions/categories/feature-requests)
+**Vote**: [GitHub Discussions](https://github.com/vtoxi/pidrivesmartos/discussions/categories/feature-requests)
 
 ---
 
@@ -508,7 +508,7 @@ We thank our sponsors:
 PiDriveSmartOS is an **ambitious, long-term project**. We're building not just software, but a **community** and **ecosystem** for open automotive computing.
 
 **Join us**:
-- 💻 Contribute code: [GitHub](https://github.com/yourorg/pidrivesmartos)
+- 💻 Contribute code: [GitHub](https://github.com/vtoxi/pidrivesmartos)
 - 💬 Discuss features: [Discord](https://discord.gg/pidrive)
 - 📣 Follow updates: [Twitter @PiDriveOS](https://twitter.com/pidriveos)
 - 💰 Sponsor development: [GitHub Sponsors](https://github.com/sponsors/pidriveos)

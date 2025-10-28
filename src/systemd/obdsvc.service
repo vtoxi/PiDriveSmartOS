@@ -1,6 +1,6 @@
 [Unit]
 Description=PiDriveSmartOS OBD-II Service
-Documentation=https://github.com/yourorg/pidrivesmartos
+Documentation=https://github.com/vtoxi/pidrivesmartos
 After=network.target socketcan.service
 Requires=socketcan.service
 Before=carui.service

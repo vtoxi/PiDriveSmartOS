@@ -285,7 +285,7 @@ Look for issues labeled `good-first-issue`:
 
 ### Feature Requests
 
-See [GitHub Discussions](https://github.com/yourorg/pidrivesmartos/discussions/categories/feature-requests) for community-requested features.
+See [GitHub Discussions](https://github.com/vtoxi/pidrivesmartos/discussions/categories/feature-requests) for community-requested features.
 
 ---
 
@@ -293,14 +293,14 @@ See [GitHub Discussions](https://github.com/yourorg/pidrivesmartos/discussions/c
 
 ### Communication Channels
 
-- **GitHub Discussions**: [Link](https://github.com/yourorg/pidrivesmartos/discussions)
+- **GitHub Discussions**: [Link](https://github.com/vtoxi/pidrivesmartos/discussions)
 - **Discord**: [Join our server](https://discord.gg/pidrive)
 - **Email**: dev@pidriveos.org
 
 ### Getting Help
 
 - **Documentation**: Check `/docs` folder
-- **FAQ**: See [GitHub Wiki](https://github.com/yourorg/pidrivesmartos/wiki/FAQ)
+- **FAQ**: See [GitHub Wiki](https://github.com/vtoxi/pidrivesmartos/wiki/FAQ)
 - **Ask Questions**: Use GitHub Discussions Q&A
 
 ### Recognition

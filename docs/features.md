@@ -650,7 +650,7 @@ echo "reverse_gpio=26" >> /etc/pidrive/camera.conf
 
 ## Feature Requests
 
-**Vote for features**: [GitHub Discussions](https://github.com/yourorg/pidrivesmartos/discussions/categories/feature-requests)
+**Vote for features**: [GitHub Discussions](https://github.com/vtoxi/pidrivesmartos/discussions/categories/feature-requests)
 
 **Top Requests**:
 1. Offline maps with routing
