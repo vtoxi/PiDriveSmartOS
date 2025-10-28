@@ -1,16 +1,21 @@
 #!/bin/bash
-# Quick launcher for PiDriveSmartOS with clean rebuild
-# Place this in the project root for easy access
+# Quick launcher WITHOUT rebuild (for testing only)
+# Use ./run.sh for development (always rebuilds)
 
 clear
 echo "╔════════════════════════════════════════════════════════╗"
-echo "║     PiDriveSmartOS - Clean Build & Launch         ║"
+echo "║     PiDriveSmartOS - Quick Launch (No Rebuild)    ║"
 echo "╚════════════════════════════════════════════════════════╝"
 echo ""
 
 cd "$(dirname "$0")"
 
-# Always do a clean rebuild for development
-echo "[INFO] Starting clean rebuild..."
-./scripts/run_carui.sh --rebuild --windowed "$@"
+# Check if binary exists
+if [ ! -f "src/carui/build/carui" ]; then
+    echo "[ERROR] Binary not found! Please run ./run.sh first to build."
+    exit 1
+fi
+
+echo "[INFO] Launching existing build..."
+./scripts/run_carui.sh --windowed "$@"
 

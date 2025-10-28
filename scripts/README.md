@@ -6,17 +6,31 @@ This directory contains utility scripts for building, running, and managing the 
 
 ## 🚀 Quick Start
 
-### Launch the Car UI (Windowed Mode)
+### **Primary Development Launch** (Always rebuilds)
 
 From the project root:
 ```bash
 ./run.sh
 ```
+✅ **Automatically does clean rebuild**  
+✅ Ensures all code changes are reflected  
+✅ Launches in windowed mode  
+✅ Recommended for active development
 
-Or from anywhere:
+### **Quick Launch** (No rebuild)
+
+For rapid testing without code changes:
 ```bash
-cd /Users/faisalsideline/Desktop/Data/repos/vtoxi/PiDriveSmartOS
-./scripts/run_carui.sh --windowed
+./quick-run.sh
+```
+⚡ Skips rebuild, launches existing binary  
+⚠️ Use only when no code changes made
+
+### Manual Launch with Options
+
+Full control:
+```bash
+./scripts/run_carui.sh [OPTIONS]
 ```
 
 ---
@@ -69,22 +83,52 @@ cd /Users/faisalsideline/Desktop/Data/repos/vtoxi/PiDriveSmartOS
 
 ---
 
-### 2. Quick Launcher (Project Root)
+### 2. Development Launcher - `run.sh` ⭐
 
 **Location:** `/run.sh` (project root)
 
-A convenience script that automatically runs the Car UI in windowed mode.
+**Primary development script** that always does a clean rebuild before launching.
 
 **Usage:**
 ```bash
-cd /Users/faisalsideline/Desktop/Data/repos/vtoxi/PiDriveSmartOS
 ./run.sh
 ```
 
-This is equivalent to:
+**Behavior:**
+- ✅ Always rebuilds (passes `--rebuild` flag)
+- ✅ Ensures fresh compilation
+- ✅ Launches in windowed mode
+- ✅ Best for active development
+
+**Equivalent to:**
 ```bash
-./scripts/run_carui.sh --windowed
+./scripts/run_carui.sh --rebuild --windowed
 ```
+
+---
+
+### 3. Quick Launcher - `quick-run.sh` ⚡
+
+**Location:** `/quick-run.sh` (project root)
+
+**Fast launch script** that skips rebuilding for rapid testing.
+
+**Usage:**
+```bash
+./quick-run.sh
+```
+
+**Behavior:**
+- ⚡ No rebuild - launches existing binary
+- ⚠️ Use only when no code changes made
+- ✅ Faster startup for testing
+- ✅ Checks if binary exists first
+
+**When to use:**
+- Testing UI interactions
+- Quick restarts after crashes
+- Demo purposes
+- No code was modified
 
 ---
 
@@ -160,27 +204,46 @@ This script is typically called by systemd at boot.
    ./scripts/install_dependencies.sh
    ```
 
-2. **Build and run:**
-   ```bash
-   ./scripts/run_carui.sh --rebuild --windowed
-   ```
-
-### Daily Development
-
-1. **Quick launch for testing:**
+2. **Initial build and run:**
    ```bash
    ./run.sh
    ```
 
-2. **After making changes:**
+### Daily Development
+
+1. **Primary workflow** (making code changes):
    ```bash
-   ./scripts/run_carui.sh --rebuild --windowed
+   ./run.sh  # Always rebuilds - use this!
+   ```
+   
+2. **Quick testing** (no code changes):
+   ```bash
+   ./quick-run.sh  # Fast launch without rebuild
    ```
 
 3. **With debug output:**
    ```bash
-   ./scripts/run_carui.sh --debug --windowed
+   ./scripts/run_carui.sh --rebuild --debug --windowed
    ```
+
+4. **Fullscreen mode:**
+   ```bash
+   ./scripts/run_carui.sh --rebuild --fullscreen
+   ```
+
+### Recommended Workflow
+
+```
+📝 Edit code
+   ↓
+💾 Save changes
+   ↓
+🔨 ./run.sh  ← Always rebuilds!
+   ↓
+🧪 Test in UI
+   ↓
+🔄 Repeat
+```
 
 ---
 
